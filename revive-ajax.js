@@ -4,8 +4,6 @@
  * This plugin works as an AMD module (for RequireJS and similar), a CommonJS
  * module (for Browserify and similar), and as a regular browser script.
  *
- * To use this 
- *
  * @license MIT
  * @author Benjamin Dummer <ben@featherweightweb.com>
  */
@@ -46,7 +44,8 @@
             doc.write = oldWrite;
 
             $el.html(text);
-        });
+
+        }, 'text'); // Use the text datatype to prevent global eval of script
     }
 
     /**
@@ -70,8 +69,8 @@
         options = options || {};
 
         if (options.reviveUrl) {    
-            this.each(function (el) {
-                deliverAd(el, options.reviveUrl);
+            this.each(function () {
+                deliverAd(this, options.reviveUrl);
             });
         }
 
