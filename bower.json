@@ -1,7 +1,6 @@
 {
   "name": "revive-ajax.js",
   "main": "revive-ajax.js",
-  "version": "1.0.0",
   "homepage": "https://github.com/featherweightweb/revive-ajax.js",
   "authors": [
     "Benjamin Dummer <dummerbenjamin@gmail.com>"
