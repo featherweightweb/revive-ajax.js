@@ -1,0 +1,23 @@
+{
+  "name": "revive-ajax.js",
+  "version": "1.0.0",
+  "description": "Simple jQuery Plugin to Deliver Revive Ads via AJAX",
+  "main": "revive-ajax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs revive-ajax.js -m -c -o revive-ajax.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/featherweightweb/revive-ajax.js.git"
+  },
+  "author": "Benjamin Dummer <ben@featherweightweb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/featherweightweb/revive-ajax.js/issues"
+  },
+  "homepage": "https://github.com/featherweightweb/revive-ajax.js#readme",
+  "devDependencies": {
+    "uglify-js": "^2.5.0"
+  }
+}
